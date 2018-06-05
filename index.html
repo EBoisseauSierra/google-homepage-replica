@@ -3,6 +3,8 @@
     <head>
         <title>Google homepage replica</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/theme.css">
     </head>
     <body>
         <header>
@@ -13,16 +15,16 @@
             <ul id="account-links">
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
-                <li><a href="#"><img src="assets/logo-apps.png" alt="Google Apps" /></a></li>
-                <li><a href="#"><img src="assets/logo-notification-0.png" alt="0 Google Notifications" / /></a></li>
-                <li><a href="#"><img src="assets/thumbnail-account.png" alt="Google Account" /></a></li>
+                <li><a href="#"><img src="assets/logo-apps.png" alt="Google Apps" class="icon-small"/></a></li>
+                <li><a href="#"><img src="assets/logo-notification-0.png" alt="0 Google Notifications" class="icon-small" /></a></li>
+                <li><a href="#"><img src="assets/thumbnail-account.png" alt="Google Account" class="icon-medium"/></a></li>
             </ul>
         </header>
         <main>
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's logo" id="google-logo" />
-            <form class="search" action="index.html" method="post">
-                <input type="text" name="" value="">
-                <fieldset>
+            <form  action="index.html" method="post">
+                <input id="search-input" type="text" name="" value="">
+                <fieldset id="search-buttons">
                     <button type="button" name="go-search">Google Search</button>
                     <button type="button" name="im-feeling">I'm Feeling Lucky</button>
                 </fieldset>
