@@ -45,19 +45,54 @@ header {
 main {
     grid-area: 3 / 2 / span 1 / span 1;
     place-self: center;
-    padding-bottom: 20vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-    #search-input {
-        width: 42vw;
+    #google-logo {
+        margin-bottom: 25px;
     }
+
+    #search-input {
+        width: 43vw;
+        min-width: 500px;
+        height: 2.5em;
+        border-radius: 0;
+        padding: .25em .75em;
+        border: solid 1px #DADADA;
+        box-shadow: .5px 1.75px 2px #DDD;
+        transition-timing-function: ease-in-out;
+        transition: box-shadow .3s;
+        font-size: 16px;
+    }
+
+        #search-input:hover,
+        #search-input:active {
+            box-shadow: .5px 2px 2px #DDD, 0px 3px 8px #DDD;
+        }
 
     #search-buttons {
         text-align: center;
     }
+
+    button {
+        border-radius: 0;
+        border: solid 1px #F2F2F2;
+        color: #7A7A7A;
+        background-color: #F2F2F2;
+        font-weight: bold;
+        height: 2.75em;
+        margin: 2em .5em;
+    }
+
+        button:hover {
+            color: #444;
+            background-color: #F4F4F4;
+            border: solid 1px #999;
+            border-radius: 2px;
+        }
 
 footer {
     grid-area: 4 / 1 / span 1 / span 3;
