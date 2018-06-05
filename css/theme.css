@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: 15px 100px 1fr 42px / 25px 1fr 25px;
+    grid-template: 13px 33px 1fr 42px / 25px 1fr 25px;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -12,6 +12,26 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
+    header ul
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+    }
+
+    header a {
+        color: #3F3F3F;
+        margin: auto 1.5em;
+    }
+    #corporate-links:first-child a {
+        margin-left: 0;
+    }
+
+    #account-links:last-child a {
+        margin-right: 0;
+    }
 
     #corporate-links {
         /* display: inline-block; */
@@ -88,9 +108,17 @@ a {
 
 
 .icon-small {
-    height: 20px;
+    height: 23px;
     width: auto;
 }
+
+.darken-on-hover {
+    opacity: .6;
+}
+
+    .darken-on-hover:hover {
+        opacity: 1;
+    }
 
 .icon-medium {
     height: 33px;
